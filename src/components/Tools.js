@@ -34,7 +34,7 @@ const Tools = () => {
             tools.map((tool, index) => (
               <div key={index} className='w-full pt-4 pl-4 pr-4 gap-1'>
                 <img className='h-22 w-44' src={tool.imageURL} alt={tool.toolName} />
-                <p className='text-sm text-black font-medium'>{tool.toolName}</p>
+                <p className='text-sm text-black font-bold text-center'>{tool.toolName}</p>
               </div>
             ))
           }
