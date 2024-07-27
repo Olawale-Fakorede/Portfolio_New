@@ -18,21 +18,21 @@ const Tools = () => {
   ]);
   
   return (
-    <div className=' bg-white h-64 w-full grid grid-cols-1'>
+    <div className=' bg-white h-72 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
       <div className=''>
         <p className='pt-3 pl-8 pr-4 font-extrabold text-blue-700'>
           Tools I use
-          <p className=' text-sm text-black font-medium'>
+          <p className=' text-sm text-black font-medium lg:w-fit'>
           Here are some awesome tools I make use of for 
           development and problem solving easier 
           and faster  for myself and users.
           </p>
         </p>
       </div>
-      <div className='h-44 w-full grid grid-cols-3 overflow-y-scroll'>
+      <div className='h-44 w-full grid grid-cols-3 overflow-y-scroll md:-ml-14'>
           {
             tools.map((tool, index) => (
-              <div key={index} className='w-full pt-4 pl-4 pr-4 gap-1'>
+              <div key={index} className='w-full pt-4 pl-4 pr-4 gap-1 hover:translate-x-5 hover:translate-y-5'>
                 <img className='h-22 w-44' src={tool.imageURL} alt={tool.toolName} />
                 <p className='text-sm text-black font-bold text-center'>{tool.toolName}</p>
               </div>
