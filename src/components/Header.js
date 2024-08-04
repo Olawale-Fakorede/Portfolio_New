@@ -12,7 +12,7 @@ const Header = () => {
     // };
 
     function openList() {
-      const listItems = document.querySelectorAll('ul');
+      const listItems = document.querySelectorAll('main');
       listItems.forEach(item => {
         item.style.display = (item.style.display === 'none') ? 'block' : 'none';
       });
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className='w-full min-w-full max-w-full h-80 md:h-66 lg:h-70 lg:grid lg:grid-cols-1 rounded-bl-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500'>
 
-        <div className='pl-4 md:pl-12 pt-6 w-full flex flex-row lg:flex lg:w-full'>
+        <div className='pl-4 md:pl-12 pt-6 w-full flex flex-row lg:flex lg:w-full text-lg md:text-3xl lg:text-5xl'>
             <h1 className='font-bold text-start font-sans text-slate-200 md:text-xl lg:text-2xl'>
                 PORTFOLIO
             </h1>
@@ -39,7 +39,6 @@ const Header = () => {
               <p className='pl-5 mb-6 md:pl-6 lg:pl-9 text-slate-200 text-xs md:text-sm lg:text-xl hover:text-amber-300 hover:font-semibold'>Skills</p>
               <p className='pl-5 mb-6 md:pl-6 lg:pl-9 text-slate-200 text-xs md:text-sm lg:text-xl hover:text-amber-300 hover:font-semibold'>My Projects</p>
               <p className='pl-5 mb-6 md:pl-6 lg:pl-9 text-slate-200 text-xs md:text-sm lg:text-xl hover:text-amber-300 hover:font-semibold'>Contact</p>
-            
             </main>
           
         </div>

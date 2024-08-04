@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Tools from './components/Tools';
-import Works from './components/Works';
+// import Works from './components/Works';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <About />
         <Tools />
-        <Works />
+        {/* <Works /> */}
     </div>
   );
 }

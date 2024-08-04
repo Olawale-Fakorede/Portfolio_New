@@ -18,8 +18,8 @@ const Tools = () => {
   ]);
   
   return (
-    <div className=' bg-white h-fit w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pb-5'>
-      <div className='w-96 md:w-96 lg:w-96 lg:pr-5'>
+    <div className=' bg-white h-fit md:h-fit lg:h-fit w-full md:min-w-full lg:max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pb-5'>
+      <div className='w-full md:w-72 lg:w-96 lg:pr-5'>
         <p className='pt-3 pl-8 text-justify font-extrabold text-blue-700'>
           Tools I use
           <p className=' text-sm text-black font-medium lg:w-fit '>
@@ -30,7 +30,7 @@ const Tools = () => {
         </p>
       </div>
 
-      <div className='h-48 w-full md:w-fit lg:w-fit grid grid-cols-3 overflow-y-scroll md:-ml-10 lg:pt-5 '>
+      <div className='h-96 md:h-fit lg:h-full w-full md:w-fit lg:w-fit grid grid-cols-3 overflow-y-scroll md:-ml-10 lg:pt-5 mt-6'>
           {
             tools.map((tool, index) => (
               <div key={index} className='w-full pt-4 pl-4 pr-4 gap-1 hover:translate-x-5 hover:translate-y-5 border-2'>
